@@ -6,7 +6,7 @@ description: Pokes to Remind — For Tasks You Can't Forget
 
 # Privacy Policy
 
-**Last Updated: September 26, 2026**
+**Last Updated: October 6, 2026**
 
 Due Something is designed to operate using Apple's system services without requiring an account or collecting your personal information on servers operated by Due Something. This Privacy Policy explains how information is handled when you use the Due Something app on supported Apple platforms.
 
@@ -20,11 +20,13 @@ Due Something requests access to your Reminders data to provide the app's functi
 
 ### Calendar
 
-Due Something requests access to your calendars for two optional features, and for nothing else.
+Due Something requests access to your calendars for three optional features, and for nothing else.
 
 **Calendar Connect** reads the events in the calendars you choose so you can turn them into tasks. Events are read on your device when you open the import screen, and only the ones you select become tasks — importing never changes, moves, or deletes anything in your calendar. An imported task records the name of the calendar it came from in its notes.
 
-**Add to Calendar** does the reverse: when you choose it on a task, Due Something writes that task to the calendar you pick as a new event.
+**Calendar Sync** keeps a list in step with one calendar you choose. Due Something reads that calendar's upcoming events on your device — when you open the app, on the refresh schedule you set, and when the system gives the app background time — and creates, updates, or removes the matching tasks. It never changes the events it reads. If the calendar is one you can write to, tasks you create in its list are written to it as events, and editing or deleting those tasks changes or deletes their events.
+
+**Add to Calendar** does the reverse of importing: when you choose it on a task, Due Something writes that task to the calendar you pick as a new event.
 
 Due Something also remembers which events you have already imported, so the same event isn't offered twice on any of your devices. This record is a per-event identifier and the date you imported it, and it is synced through your private iCloud account as described under _iCloud_ below. Which of your calendars are offered for import is stored only on the device where you set it and is not synced. Optional — Due Something works without calendar access, and it is controlled in Settings.
 
@@ -78,6 +80,8 @@ Widgets, Lock Screen widgets, Control Center controls, and the overdue Live Acti
 
 The Due Something app on Apple Watch reads your reminders from the Watch's own copy of the Reminders database and shows the same tasks as your other devices. If you dictate a task on the Watch, Apple's speech recognition converts what you say to text as described under _Microphone and Speech Recognition_ above.
 
+Your iPhone sends the Watch the settings it needs, such as what each swipe does and how long a snooze lasts, over their direct connection.
+
 watchOS does not allow apps to change reminders directly, so completing, snoozing, or adding a task on the Watch is carried out by your iPhone on its behalf. What you did travels to your iPhone directly when it is nearby. When it isn't, the instruction — which for a new task includes the title you dictated — is held in your private iCloud account, end-to-end encrypted, until your iPhone can apply it, and is removed once it has. This is covered by the _iCloud_ section below.
 
 ### iCloud
@@ -89,21 +93,24 @@ Your reminders and lists sync through Apple's Reminders service. In addition, Du
 * Whether a task has an alarm
 * Calendar events a task has written for itself through Add to Calendar
 * Attachments
-* List preferences such as icons, hidden lists, sort order, list order, and the order you have dragged tasks into
+* List preferences such as icons, list type icons, hidden lists, sort order, list order, and the order you have dragged tasks into
+* Sublists — the groups you organize a list's tasks into: their names, icons, and order, and which tasks belong to each
 * Smart lists you have built yourself — their names, icons, colors, and the rules that decide what they show
 * Saved Multi-List layouts — which pair of lists each one opens
 * List templates — a template's name, icon, color, and the titles, notes, links, priority, and flags of the tasks saved in it
-* When you last marked each list reviewed
+* Review reminders for your lists — when and how often each one reminds you, and when you last marked it reviewed
 * Your Recently Deleted list
+* A history of the tasks you have completed — each one's title, list, due date, when you completed it, and marks such as a flag — used for the Completed list, a repeating task's last-completed date, and the Due Something Report
 * Saved places for location snoozing
 * A record of which calendar events you have imported
+* For calendars you sync, the sync settings and a copy of each synced event — its title, notes, location, link, and dates — with which task it became, so every device shows the same tasks
 * Actions taken on an Apple Watch that are waiting for your iPhone to apply them
 * App settings, in the sections you choose
 * The history used for snooze suggestions
 
 All of this information is end-to-end encrypted: it is encrypted on your device with keys that live in your iCloud Keychain, and neither the developer nor Apple can read it. Attachment files are protected by iCloud's standard encryption in transit and at rest. Due Something also stores a random identifier for each of your devices so that changes can be attributed to the device that made them; it contains no personal information.
 
-Some of the app's data deliberately stays on the device that made it and is never sent to iCloud. Review reminders for a list are one of these: the schedule you set — how often and at what time — belongs to that device, so you choose where you are reminded. Only the record of when you last reviewed a list is kept in step across your devices.
+Some of the app's data deliberately stays on the device that made it and is never sent to iCloud. The colors you give a list's header or the list itself through **Customize** are one example, and whether a sublist is collapsed is another: they are display choices for that device alone.
 
 Syncing is on automatically when you are signed in to iCloud. You can turn it off for a device, and choose which sections of settings are kept in sync, in the app under **Settings → iCloud Sync**. You can also turn Due Something off under your Apple account's iCloud settings on any device. Attachments stored in iCloud count toward your iCloud storage. The developer has no access to your iCloud account or to any of this data.
 
