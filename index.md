@@ -6,7 +6,7 @@ description: Pokes to Remind — For Tasks You Can't Forget
 
 # Privacy Policy
 
-**Last Updated: November 10, 2026**
+**Last Updated: November 12, 2026**
 
 Due Something is designed to operate using Apple's system services without requiring an account or collecting your personal information on servers operated by Due Something. This Privacy Policy explains how information is handled when you use the Due Something app on supported Apple platforms.
 
@@ -113,10 +113,6 @@ All of this information is end-to-end encrypted: it is encrypted on your device 
 Some of the app's data deliberately stays on the device that made it and is never sent to iCloud. The colors you give a list's header or the list itself through **Customize** are one example, and whether a sublist is collapsed, or shown under its list in the lists drawer, is another: they are display choices for that device alone.
 
 Syncing is on automatically when you are signed in to iCloud. You can turn it off for a device, and choose which sections of settings are kept in sync, in the app under **Settings → iCloud Sync**. You can also turn Due Something off under your Apple account's iCloud settings on any device. Attachments stored in iCloud count toward your iCloud storage. The developer has no access to your iCloud account or to any of this data.
-
-### Tips
-
-Due Something's Tip Jar uses Apple's in-app purchase system. Payments are handled entirely by Apple; the developer does not receive or store your payment details, and the app does not collect personal information as part of a tip.
 
 ### Analytics and Crash Reports
 
